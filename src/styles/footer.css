@@ -1,0 +1,19 @@
+
+footer {
+  background: var(--surface);
+  color: var(--accent-light);
+  text-align: center;
+  padding: 0.5rem 0.25rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 16px rgba(99, 102, 241, 0.06);
+  letter-spacing: 0.01em;
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

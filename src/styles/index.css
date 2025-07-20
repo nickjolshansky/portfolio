@@ -1,0 +1,46 @@
+:root {
+  --primary: #6366f1;
+  --background: #18181b;
+  --background-alt: #232338;
+  --foreground: #e5e7eb;
+  --accent: #a5b4fc;
+  --accent-light: #c7d2fe;
+  --surface: #22223b;
+  --white: #fff;
+  --card: #25254a;
+  --shadow: 0 4px 32px rgba(99, 102, 241, 0.12);
+  --radius: 18px;
+  --navbar-height: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  line-height: 1.7;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+
+.fadein {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.61, 1, 0.88, 1), transform 0.7s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
