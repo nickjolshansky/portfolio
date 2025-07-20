@@ -25,6 +25,7 @@ nav {
 .nav-links {
   display: flex;
   gap: 2.2rem;
+  transition: transform 0.3s ease-out;
 }
 
 .nav-links a {

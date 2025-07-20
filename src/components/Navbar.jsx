@@ -45,27 +45,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll
-const handleNavClick = (href) => (e) => {
-  const el = document.querySelector(href);
-  if (el) {
-    e.preventDefault();
-    const nav = document.querySelector("nav");
-    let navbarHeight = 0;
-    if (nav) {
-      const styles = window.getComputedStyle(nav);
-      navbarHeight = parseInt(styles.getPropertyValue("--navbar-height")) || 0;
-    } else {
-      navbarHeight = 40;
-    }
-    const targetY = el.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-    window.scrollTo({
-      top: targetY,
-      behavior: "smooth",
-    });
-    setMenuOpen(false);
-  }
+const handleNavClick = (href) => () => {
+  setMenuOpen(false);
 };
+
 
   // Accessibility: allow Enter/Space to open menu
   const navToggleHandler = (e) => {

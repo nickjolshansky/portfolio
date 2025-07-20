@@ -90,10 +90,12 @@
 
 .hero-fade-out {
   opacity: 0;
+  transform: translateX(-10px);
 }
 
 .hero-fade-in {
   opacity: 1;
+  transform: translateX(10px);
 }
 
 

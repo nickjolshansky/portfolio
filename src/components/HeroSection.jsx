@@ -41,8 +41,8 @@ const HeroSection = () => {
           <h1>Nicholas Olshansky</h1>
           <p>
             Full stack dev turning ideas into workable solutions.<br />
-            I used to direct live TV<br />
-            Now I direct data and design systems.
+            I used to direct live TV.<br />
+            Now I direct data and user experiences.
           </p>
           <a href="#projects" className="hero-btn">Explore My Work</a>
         </div>
