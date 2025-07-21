@@ -36,6 +36,7 @@
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  max-width: 600px;
 }
 
 .media-text h3 {
@@ -55,6 +56,10 @@
     width: 60%;
     padding: 0 2rem;
   }
+
+  .media-section::before {
+    left: -150px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -62,29 +67,29 @@
     width: 100%;
     padding: 0 2rem;
   }
-  
+
   .media-section::before {
     height: 30vh;
     width: 100%;
+    left: 0;
     background-position: center;
   }
-  
+
   .media-section {
     padding-top: calc(30vh + 2rem);
   }
 }
 
-
 @media (max-width: 600px) {
   .media-section {
     padding: calc(30vh + 1rem) 0 2rem;
   }
-  
+
   .media-content {
     padding: 0 1rem;
     gap: 1rem;
   }
-  
+
   .media-text {
     padding: 1.5rem;
   }

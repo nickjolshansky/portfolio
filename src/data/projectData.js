@@ -2,41 +2,33 @@
 const projectData = [
   {
     id: "howard-miller",
-    title: "Howard Miller Digital Transformation",
-    desc: "Redesigned a furniture manufacturer’s website with modern e-commerce features and improved customer experience.",
-    tags: ["E-commerce", "Web Design", "React"],
+    title: "Howard Miller Website Redesign",
+    desc: "Redesigned and built website with modern e-commerce features and improved customer experience.",
+    tags: ["E-commerce", "Web Design", "Shopify"],
     github: null,
-    demo: "#",
     overview:
-      "Complete redesign of legacy website focusing on modern UX principles, performance, and scalable architecture. Introduced a modular component system for easier updates and maintenance.",
-    features: [
-      "Responsive product catalogs",
-      "Integrated inventory management",
-      "Streamlined checkout process",
-    ],
+      "Complete redesign focusing on a modern user experience, integrating Shopify for e-commerce functionality. Adding features for product customization and AI-powered marketing tools.",
+    features: ["Responsive product catalogs", "Integrated inventory management", "Streamlined checkout process"],
+    video: "https://www.youtube.com/embed/wbJcJCkBcMg",
     screenshots: [
       {
         src: "/hm-home.jpg",
         alt: "Homepage redesign",
-        caption: "Modern homepage layout",
+        caption: "Homepage layout",
       },
     ],
-    techStack: ["React", "Node.js", "MongoDB"],
+    techStack: ["Shopify Liquid", "jQuery", "Node.js", "Express", "MySQL"],
   },
   {
     id: "product-configurator",
     title: "Console Configuration Suite",
     desc: "A Shopify-integrated tool for real-time 3D furniture customization.",
-    tags: ["Shopify", "Customization", "UX"],
+    tags: ["Shopify Liquid", "jQuery", "Node.js", "Express", "UX"],
     github: null,
     demo: "#",
     overview:
-      "Developed a React-based interface that allows users to customize furniture pieces in real-time with dynamic pricing and configuration options. Integrated seamlessly with Shopify backend.",
-    features: [
-      "Live 3D product preview",
-      "Real-time pricing updates",
-      "Custom component picker",
-    ],
+      "Developed an interface that allows users to customize furniture pieces in real-time with dynamic quoting and configuration options. Integrated seamlessly with Shopify through a backend built in Node.js and Express.",
+    features: ["Live 3D product preview", "Real-time dimension calculations", "User-friendly interface", "PDF generation for quoting"],
     screenshots: [
       {
         src: "/configurator.jpg",
@@ -44,22 +36,17 @@ const projectData = [
         caption: "Interactive furniture configurator",
       },
     ],
-    techStack: ["React", "Shopify", "GraphQL", "Three.js"],
+    techStack: ["Shopify Liquid", "jQuery", "Node.js", "Express", "UX"],
   },
   {
     id: "automated-marketing",
     title: "Automated Marketing Tools",
-    desc: "Developed automated systems for generating product spec sheets and 3D marketing materials.",
-    tags: ["Automation", "Marketing", "PDF"],
+    desc: "Developed automated systems for generating product spec sheets and marketing materials.",
+    tags: ["Automation", "Marketing", "Excel", "Node.js"],
     github: null,
     demo: "#",
-    overview:
-      "Created backend scripts and templates to automatically generate marketing assets from a product database. Included PDF spec sheets and rendered 3D views using Blender pipelines.",
-    features: [
-      "One-click spec sheet export",
-      "Batch 3D rendering automation",
-      "Metadata-driven templating",
-    ],
+    overview: "Created backend scripts and templates to automatically generate marketing assets from either csv data or a MySQL database.",
+    features: ["One-click spec sheet export", "Metadata-driven templating"],
     screenshots: [
       {
         src: "/spec-generator.jpg",
@@ -78,11 +65,7 @@ const projectData = [
     demo: "#",
     overview:
       "Built a suite of AI tools to enhance online furniture sales. Included a room scene generator using diffusion models and a conversational chatbot trained on product data.",
-    features: [
-      "AI-generated room scenes",
-      "Smart product recommendation bot",
-      "Speech-to-text integration",
-    ],
+    features: ["AI-generated room scenes", "Smart product recommendation bot", "Speech-to-text integration"],
     screenshots: [
       {
         src: "/ai-room.jpg",
@@ -95,17 +78,13 @@ const projectData = [
   {
     id: "geneva-archives",
     title: "Geneva Street Archives",
-    desc: "Created a digital archive for family history, including video digitization and interactive trees.",
-    tags: ["Archives", "Family History", "Multimedia"],
+    desc: "Created a digital archive for family history, including video and image digitization, interactive family tree, games and voting systems, and login authentication.",
+    tags: ["Archives", "Family History", "Multimedia", "React", "Vite", "MUI", "ASP.NET Core", "Entity Framework", "MySQL Server", "IIS Hosting"],
     github: null,
     demo: "#",
     overview:
-      "A personal archival platform combining digitized videos, photos, and an interactive family tree interface. Focused on longevity, privacy, and accessibility.",
-    features: [
-      "Family tree visualization",
-      "Video/audio playback from archive",
-      "Private access controls",
-    ],
+      "A personal archival platform combining digitized videos, photos, and an interactive family tree interface. Focused on longevity, privacy, and accessibility. Family members are provided a user-friendly interface to explore, upload, and update information that is stored on a database.",
+    features: ["Family tree visualization", "Video/audio playback from archive", "Private access controls"],
     screenshots: [
       {
         src: "/geneva-tree.jpg",
@@ -124,11 +103,7 @@ const projectData = [
     demo: "#",
     overview:
       "Created a 2.5D puzzle game focused on mechanics and narrative pacing. Also built a custom Discord bot that synced with game data and provided real-time stats.",
-    features: [
-      "Physics-based puzzles",
-      "Dialog-driven narrative",
-      "Discord bot integration",
-    ],
+    features: ["Physics-based puzzles", "Dialog-driven narrative", "Discord bot integration"],
     screenshots: [
       {
         src: "/puzzle-game.jpg",
@@ -139,19 +114,15 @@ const projectData = [
     techStack: ["Unity", "C#", "Node.js", "Discord.js"],
   },
   {
-    id: "shrek-animation",
-    title: "Creative 3D Animation",
-    desc: "Animated a scene for the collaborative fan project Shrek 2 Retold using Blender.",
-    tags: ["Animation", "Blender", "Creative"],
+    id: "media-showcase",
+    title: "Media Showcase",
+    desc: "Take a deeper look into some of the media work I've done professionally and personally.",
+    tags: ["Video Editing", "3D Animation", "Blender", "Adobe Suite", "Camera Work", ""],
     github: null,
     demo: "#",
     overview:
       "Animated a fully custom 3D segment in Blender as part of the viral ‘Shrek 2 Retold’ project. Included character rigging, lip-syncing, and stylized lighting.",
-    features: [
-      "Full 3D animation pipeline",
-      "Custom rigging & lip-sync",
-      "Stylized render aesthetic",
-    ],
+    features: ["Full 3D animation pipeline", "Custom rigging & lip-sync", "Stylized render aesthetic"],
     screenshots: [
       {
         src: "/shrek-scene.jpg",
@@ -170,11 +141,7 @@ const projectData = [
     demo: "#",
     overview:
       "Built a touchscreen interface to act as a centralized hub for household info. Pulled data from APIs and local sensors to create a dynamic and personalized dashboard.",
-    features: [
-      "Live weather and news feeds",
-      "Motion and door sensor integration",
-      "Mobile responsive interface",
-    ],
+    features: ["Live weather and news feeds", "Motion and door sensor integration", "Mobile responsive interface"],
     screenshots: [
       {
         src: "/smart-dashboard.jpg",

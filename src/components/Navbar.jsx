@@ -45,33 +45,35 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-const handleNavClick = (href) => () => {
-  setMenuOpen(false);
-};
+  const handleNavClick = href => e => {
+    e.preventDefault();
+    setMenuOpen(false);
 
+    const OFFSET = 40; // px
+
+    const el = document.querySelector(href);
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }
+  };
 
   // Accessibility: allow Enter/Space to open menu
-  const navToggleHandler = (e) => {
+  const navToggleHandler = e => {
     if (e.type === "click" || e.key === "Enter" || e.key === " ") {
-      setMenuOpen((open) => !open);
+      setMenuOpen(open => !open);
     }
   };
 
   return (
     <nav>
       <a className="nav-brand">{NAV_BRAND_TEXT[activeSection] || "Welcome"}</a>
-      <div
-        className={`nav-links${menuOpen ? " open" : ""}`}
-        id="navLinks"
-        ref={navLinksRef}
-      >
-        {NAV_SECTIONS.map((section) => (
-          <a
-            key={section.href}
-            href={section.href}
-            className={activeSection === section.href ? "active" : ""}
-            onClick={handleNavClick(section.href)}
-          >
+      <div className={`nav-links${menuOpen ? " open" : ""}`} id="navLinks" ref={navLinksRef}>
+        {NAV_SECTIONS.map(section => (
+          <a key={section.href} href={section.href} className={activeSection === section.href ? "active" : ""} onClick={handleNavClick(section.href)}>
             {section.label}
           </a>
         ))}

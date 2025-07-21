@@ -2,8 +2,18 @@ import React, { useEffect, useRef, useState } from "react";
 import profile0 from "../assets/images/profile0.jpg";
 import profile1 from "../assets/images/profile1.png";
 import profile2 from "../assets/images/profile2.jpg";
-
 const images = [profile0, profile1, profile2];
+
+const smoothScrollToHash = (hash, offset = 40) => {
+  const el = document.querySelector(hash);
+  if (el) {
+    const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({
+      top,
+      behavior: "smooth",
+    });
+  }
+};
 
 const HeroSection = () => {
   const [imgIdx, setImgIdx] = useState(0);
@@ -14,13 +24,18 @@ const HeroSection = () => {
     const interval = setInterval(() => {
       setFadeClass("hero-fade-out");
       setTimeout(() => {
-        setImgIdx((idx) => (idx + 1) % images.length);
+        setImgIdx(idx => (idx + 1) % images.length);
         setFadeClass("hero-fade-in");
-        setTimeout(() => setFadeClass(""), 200); // match fade
+        setTimeout(() => setFadeClass(""), 200);
       }, 300);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleHeroLink = hash => e => {
+    e.preventDefault();
+    smoothScrollToHash(hash);
+  };
 
   return (
     <section className="hero" id="home">
@@ -28,23 +43,21 @@ const HeroSection = () => {
       <div className="hero-bg2"></div>
       <div className="hero-bg3"></div>
       <div className="hero-inner">
-        <a href="#contact" id="hero-headshot">
-          <img
-            ref={imgRef}
-            src={images[imgIdx]}
-            alt="Nicholas Olshansky headshot"
-            className={fadeClass}
-            draggable="false"
-          />
+        <a href="#contact" id="hero-headshot" onClick={handleHeroLink("#contact")}>
+          <img ref={imgRef} src={images[imgIdx]} alt="Nicholas Olshansky headshot" className={fadeClass} draggable="false" />
         </a>
         <div className="hero-content fadein">
           <h1>Nicholas Olshansky</h1>
           <p>
-            Full stack dev turning ideas into workable solutions.<br />
-            I used to direct live TV.<br />
+            Full stack dev turning ideas into workable solutions.
+            <br />
+            I used to direct live TV.
+            <br />
             Now I direct data and user experiences.
           </p>
-          <a href="#projects" className="hero-btn">Explore My Work</a>
+          <a href="#projects" className="hero-btn" onClick={handleHeroLink("#projects")}>
+            Explore My Work
+          </a>
         </div>
       </div>
     </section>
