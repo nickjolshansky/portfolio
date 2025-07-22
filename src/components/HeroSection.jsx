@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import profile0 from "../assets/images/profile0.jpg";
-import profile1 from "../assets/images/profile1.png";
-import profile2 from "../assets/images/profile2.jpg";
+import profile0 from "/images/hero-section/profile0.jpg";
+import profile1 from "/images/hero-section/profile1.png";
+import profile2 from "/images/hero-section/profile2.jpg";
 const images = [profile0, profile1, profile2];
 
 const smoothScrollToHash = (hash, offset = 40) => {

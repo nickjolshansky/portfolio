@@ -1,6 +1,5 @@
-
 footer {
-  background: var(--surface);
+  background: var(--background-alt);
   color: var(--accent-light);
   text-align: center;
   padding: 0.5rem 0.25rem;

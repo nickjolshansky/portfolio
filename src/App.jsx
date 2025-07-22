@@ -20,11 +20,15 @@ import "./styles/contact-section.css";
 import "./styles/footer.css";
 import "./styles/project-page.css";
 
-function App() {
+function ScrollFadeInHandler() {
   useScrollFadeIn();
+  return null;
+}
 
+function App() {
   return (
     <Router>
+      <ScrollFadeInHandler />
       <Routes>
         <Route
           path="/"
