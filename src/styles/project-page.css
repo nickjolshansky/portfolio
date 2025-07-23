@@ -136,9 +136,8 @@ nav {
 
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-
 .gallery-item {
   background: var(--card);
   border-radius: var(--radius);
@@ -164,7 +163,6 @@ nav {
   display: block;
   object-fit: cover;
   border-radius: var(--radius);
-  border-bottom: 3px solid var(--primary);
 }
 
 .project-gallery .gallery-item:first-child {
@@ -172,8 +170,9 @@ nav {
 }
 
 .caption {
-  padding: 0.25rem 2rem;
+  padding: 0.25rem 0.75rem;
   text-align: center;
+  text-wrap: balance;
   color: black;
   font-size: 1rem;
   background: var(--accent-light);

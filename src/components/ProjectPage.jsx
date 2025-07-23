@@ -76,7 +76,6 @@ export default function ProjectPage() {
 
           {project.screenshots?.length > 0 && (
             <section className="project-section">
-              <h2>Screenshots</h2>
               <div className="project-gallery">
                 {project.screenshots.map((shot, i) => (
                   <figure
@@ -146,7 +145,6 @@ export default function ProjectPage() {
 
           {project.video && (
             <section className="project-section">
-              <h2>Demo Video</h2>
               <div className="video-container">
                 {project.video.endsWith(".webm") ? (
                   <video controls>
