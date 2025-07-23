@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import projectData from "../data/projectData";
 
 export default function ProjectPage() {
   const { projectId } = useParams();
   const project = projectData.find(p => p.id === projectId);
+  const [enlargedIndex, setEnlargedIndex] = useState(null);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
@@ -79,12 +80,68 @@ export default function ProjectPage() {
               <h2>Screenshots</h2>
               <div className="project-gallery">
                 {project.screenshots.map((shot, i) => (
-                  <figure className="gallery-item" key={i}>
-                    <img src={shot.src} alt={shot.alt || `Screenshot ${i + 1}`} />
+                  <figure
+                    className="gallery-item"
+                    key={i}
+                    style={{ cursor: "zoom-in" }}
+                    onClick={() => setEnlargedIndex(i)}
+                    tabIndex={0}
+                    onKeyDown={e => {
+                      if (e.key === "Enter" || e.key === " ") setEnlargedIndex(i);
+                    }}
+                    aria-label="Click to enlarge"
+                    role="button"
+                  >
+                    {shot.src.endsWith(".webm") ? (
+                      <video src={shot.src} autoPlay loop muted playsInline style={{ width: "100%", borderRadius: "var(--radius)" }}>
+                        Your browser does not support the video tag.
+                      </video>
+                    ) : (
+                      <img src={shot.src} alt={shot.alt || `Screenshot ${i + 1}`} />
+                    )}
                     {shot.caption && <figcaption className="caption">{shot.caption}</figcaption>}
                   </figure>
                 ))}
               </div>
+
+              {enlargedIndex !== null && (
+                <div
+                  className="lightbox"
+                  onClick={() => setEnlargedIndex(null)}
+                  tabIndex={-1}
+                  aria-modal="true"
+                  role="dialog"
+                  onKeyDown={e => {
+                    if (e.key === "Escape") setEnlargedIndex(null);
+                  }}
+                >
+                  <div className="lightbox-content" onClick={e => e.stopPropagation()}>
+                    <button className="lightbox-close" onClick={() => setEnlargedIndex(null)} aria-label="Close">
+                      ×
+                    </button>
+                    {project.screenshots[enlargedIndex].src.endsWith(".webm") ? (
+                      <video
+                        src={project.screenshots[enlargedIndex].src}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        controls
+                        style={{ maxWidth: "90vw", maxHeight: "80vh", borderRadius: "12px" }}
+                      />
+                    ) : (
+                      <img
+                        src={project.screenshots[enlargedIndex].src}
+                        alt={project.screenshots[enlargedIndex].alt || `Screenshot ${enlargedIndex + 1}`}
+                        style={{ maxWidth: "90vw", maxHeight: "80vh", borderRadius: "12px" }}
+                      />
+                    )}
+                    {project.screenshots[enlargedIndex].caption && (
+                      <figcaption style={{ color: "#fff", marginTop: "1rem", textAlign: "center" }}>{project.screenshots[enlargedIndex].caption}</figcaption>
+                    )}
+                  </div>
+                </div>
+              )}
             </section>
           )}
 
