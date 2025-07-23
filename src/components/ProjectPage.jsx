@@ -9,9 +9,8 @@ export default function ProjectPage() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  }, []);
+  }, [projectId]);
 
-  // Lookup related projects by id, filter out any invalid ones
   const relatedProjects = project?.see_also ? project.see_also.map(id => projectData.find(p => p.id === id)).filter(Boolean) : [];
 
   if (!project) {

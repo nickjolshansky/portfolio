@@ -1,0 +1,48 @@
+projects scroll to top on navigation
+
+
+HM redesign
+-better overview
+-video compilation
+
+HM configurator
+-better descriptions/overview
+-record audio
+
+HM automated tools
+-better overview
+-record audio
+
+HM ai
+-record audio
+-better overview
+
+home dashboard
+-one more pic or video?
+
+geneva
+-xunit tests
+-site improvements
+-videos and screenshots
+-overview/descriptions
+
+python pokemon
+-final touches
+-video and screenshots
+-overview/descriptions
+
+game showcase
+-kitfolk
+-stream dream
+-pirate game?
+-prey tell?
+-discord games
+
+
+media showcase
+-tv6
+-hockey
+-cabinet promo
+-shrek 2
+-other blender?
+-other videos?

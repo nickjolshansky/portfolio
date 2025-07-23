@@ -63,8 +63,8 @@ nav {
 }
 
 .project-tags li {
-  background: var(--surface);
-  color: var(--primary);
+  background: var(--accent-light);
+  color: black;
   font-size: 0.93rem;
   padding: 0.35em 1.2em;
   border-radius: 18px;
@@ -160,8 +160,9 @@ nav {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
   border-radius: var(--radius);
   border-bottom: 3px solid var(--primary);
 }
@@ -270,8 +271,8 @@ nav {
 }
 
 .see-also-tags li {
-  background: var(--surface);
-  color: var(--primary);
+  background: var(--accent-light);
+  color: black;
   border-radius: 1em;
   padding: 0.17em 0.8em;
   font-weight: 500;

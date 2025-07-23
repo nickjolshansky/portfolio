@@ -6,7 +6,7 @@ const projectData = [
     desc: "Redesigned and built website with modern e-commerce features and improved customer experience.",
     tags: ["E-commerce", "Web Design", "Shopify"],
     overview:
-      "Complete redesign focusing on a modern user experience, integrating Shopify for e-commerce functionality. Adding features for product customization and AI-powered marketing tools.",
+      "A complete overhaul of the Howard Miller website, focused on delivering a seamless, modern shopping experience. Built on Shopify, the new site features enhanced e-commerce capabilities including responsive product catalogs, real-time inventory integration, and a simplified checkout process. Custom product configuration tools and AI-driven marketing enhancements were added to support personalization and improve conversion rates.",
     features: ["Responsive product catalogs", "Integrated inventory management", "Streamlined checkout process"],
     video: "https://www.youtube.com/embed/wbJcJCkBcMg",
     screenshots: [
@@ -40,15 +40,51 @@ const projectData = [
     tags: ["Shopify Liquid", "jQuery", "Node.js", "Express", "UX"],
     github: null,
     overview:
-      "Developed an interface that allows users to customize furniture pieces in real-time with dynamic quoting and configuration options. Integrated seamlessly with Shopify through a backend built in Node.js and Express.",
+      "Developed a custom UI that connects to Intiaro’s 3D engine via API, enabling real-time furniture customization and quoting within Shopify. The interface handles dimension & sku logic, option visualization, and PDF generation. Built for a seamless user experience using Node.js, Express, and jQuery.",
     features: ["Live 3D product preview", "Real-time dimension calculations", "User-friendly interface", "PDF generation for quoting"],
     screenshots: [
       {
-        src: "/configurator.jpg",
+        src: "/images/projects/hm-website/configurator/console.mp4",
         alt: "Configurator tool UI",
-        caption: "Interactive furniture configurator",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/console0.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/console1.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/console2.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/modular0.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/modular1.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/modular2.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
+      {
+        src: "/images/projects/hm-website/configurator/modular3.jpg",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
       },
     ],
+    video: "/images/projects/hm-website/configurator/modular.mp4",
     see_also: ["howard-miller", "automated-marketing", "ai-sales-tools"],
   },
   {
@@ -57,21 +93,58 @@ const projectData = [
     desc: "Developed automated systems for generating product spec sheets and marketing materials.",
     tags: ["Automation", "Marketing", "Excel", "Node.js", "OpenAI API"],
     github: null,
-    overview: "Created backend scripts and templates to automatically generate marketing assets from either csv data or a MySQL database.",
+    overview:
+      "Built a suite of tools to automate the generation of product spec sheets and marketing assets from CSV or MySQL sources. Integrated OpenAI for dynamic content creation and templating, with one-click exports and Shopify quoting support. Backend developed in Node.js or PHP depending on client needs, designed for speed, scalability, and ease of use.",
     features: ["One-click spec sheet export", "Metadata-driven templating", "OpenAI integration for content generation"],
     screenshots: [
       {
-        src: "/spec-generator.jpg",
-        alt: "Spec sheet tool",
-        caption: "Spec sheet generation interface",
+        src: "/images/projects/hm-website/automation/automated-marketing.jpg",
+        alt: "Automated marketing tools",
+        caption: "Automated marketing tools for generating spec sheets and product data",
+      },
+      {
+        src: "/images/projects/hm-website/automation/product-spec-sheet.jpg",
+        alt: "Automated marketing tools",
+        caption: "Product spec sheets generated on demand from data stored in Shopify and other product inventory managers",
+      },
+      {
+        src: "/images/projects/hm-website/automation/sheet.jpg",
+        alt: "Automated marketing tools",
+        caption: "Marketing sheets for sales reps built directly from excel data using node.js and html templating",
+      },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool0.jpg",
+        alt: "Shopify integrated quoting tool",
+        caption: "Shopify integrated dashboard for sales raps and admins to view past quotes",
+      },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool1.jpg",
+        alt: "Shopify integrated quoting tool",
+        caption: "Integrated Shopify's storefront API to parse order data and display details to users with authorization",
+      },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool2.jpg",
+        alt: "Shopify integrated quoting tool",
+        caption: "Automatically populate checkout cart with selected items using Shopify's cart API ",
+      },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool3.jpg",
+        alt: "Shopify integrated quoting tool",
+        caption: "Form with validation to allow sales reps to generate and save new quotes with custom data",
+      },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool4.jpg",
+        alt: "Shopify integrated quoting tool",
+        caption: "PHP backend to handle quote saving and PDF generation for elegant information display",
       },
     ],
+    video: "/images/projects/hm-website/automation/quote-tool.mp4",
     see_also: ["howard-miller", "product-configurator", "ai-sales-tools"],
   },
   {
     id: "ai-sales-tools",
     title: "AI-Powered Sales Solutions",
-    desc: "Implemented AI tools like a room scene generator and chatbot to support furniture sales.",
+    desc: "Developed AI-powered tools to support online furniture sales, including a room scene generator powered by diffusion models and a chatbot trained on product data. The chatbot handles customer inquiries and recommends products based on real-time inputs. All tools are integrated with existing sales platforms via REST APIs and supported by a Node.js/PHP backend.",
     tags: ["AI", "Sales Tools", "Chatbot", "OpenAI", "Node.js", "MySQL", "REST API", "PHP"],
     github: null,
     overview:
@@ -123,17 +196,27 @@ const projectData = [
   {
     id: "smart-dashboard",
     title: "Smart Home Dashboard",
-    desc: "Engineered a touchscreen Raspberry Pi dashboard for weather, news, and home alerts.",
-    tags: ["IoT", "Raspberry Pi", "Home Automation", "HTML/CSS/JS", "REST API"],
+    desc: "Touchscreen Raspberry Pi dashboard for weather, news, and home surveillance system.",
+    tags: ["IoT", "Raspberry Pi", "Home Automation", "HTML/CSS/JS/jQuery", "REST API"],
     github: null,
     overview:
-      "Built a touchscreen interface to act as a centralized hub for household info. Pulled data from APIs and local sensors to create a dynamic and personalized dashboard.",
-    features: ["Live weather and news feeds", "Motion and door sensor integration", "Mobile responsive interface"],
+      "Created a touchscreen dashboard on a Raspberry Pi to display weather, news, and live surveillance feeds. Built with HTML/CSS/JS and REST APIs, it serves as a central hub for information to start my day.",
+    features: ["Live weather and news feeds", "Connection to home surveillance system", "Touchscreen interface", "Hosted on Raspberry Pi / Linux"],
     screenshots: [
       {
-        src: "/smart-dashboard.jpg",
+        src: "/images/projects/smart-dashboard/news.jpg",
         alt: "Home dashboard UI",
-        caption: "Smart home display powered by Raspberry Pi",
+        caption: "Smart home display powered by Raspberry Pi and HTML/CSS/JS/jQuery",
+      },
+      {
+        src: "/images/projects/smart-dashboard/weather.jpg",
+        alt: "Daily updated weather",
+        caption: "Daily updated weather UI",
+      },
+      {
+        src: "/images/projects/smart-dashboard/pi.jpg",
+        alt: "Raspberry Pi",
+        caption: "All controlled by a Raspberry Pi",
       },
     ],
     see_also: ["subtitles-pokemon-player", "game-showcase", "media-showcase"],
@@ -144,7 +227,8 @@ const projectData = [
     desc: "A Python program that uses movie subtitles to generate input commands for a Pokemon game.",
     tags: ["HTML/CSS/JS", "Python", "Flask", "ffmpeg"],
     github: null,
-    overview: "This program uses the SRT subtitles file from any movie to generate input commands that are then sent to a Pokemon game using python.",
+    overview:
+      "Built a Python program that parses SRT movie subtitles and turns them into input commands for a Pokémon game. Powered by Flask and ffmpeg, it’s an experiment in automation and absurdist entertainment.",
     features: ["Subtitle parsing", "Input command generation", "Game automation", "pointless fun"],
     screenshots: [
       {
