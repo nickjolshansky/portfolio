@@ -53,7 +53,7 @@ const projectData = [
   },
   {
     id: "automated-marketing",
-    title: "Automated Marketing Tools",
+    title: "Automated Marketing and Sales Tools",
     desc: "Developed automated systems for generating product spec sheets and marketing materials.",
     tags: ["Automation", "Marketing", "Excel", "Node.js", "OpenAI API"],
     github: null,
@@ -76,14 +76,30 @@ const projectData = [
     github: null,
     overview:
       "Built a suite of AI tools to enhance online furniture sales. Included a room scene generator using diffusion models and a conversational chatbot trained on product data.",
-    features: ["AI-generated room scenes", "Smart product recommendation bot", "Speech-to-text integration"],
+    features: ["AI-generated room scenes", "Smart product recommendation bot", "Chatbot for customer inquiries", "Integration with existing sales platforms"],
     screenshots: [
       {
-        src: "/ai-room.jpg",
+        src: "/images/projects/ai/presti.webm",
         alt: "Generated room scene",
-        caption: "Room mockups generated with AI",
+        caption: "AI generated room scene featuring user-configured furniture",
+      },
+      {
+        src: "/images/projects/ai/ai-chat.webm",
+        alt: "AI product FAQ chatbot",
+        caption: "AI chatbot interface for customer questions",
+      },
+      {
+        src: "/images/projects/ai/ai0.jpg",
+        alt: "AI customer rep assistant",
+        caption: "AI assistant for referencing legacy product documentation",
+      },
+      {
+        src: "/images/projects/ai/ai1.jpg",
+        alt: "AI customer rep assistant",
+        caption: "AI assistant for referencing legacy product documentation",
       },
     ],
+    video: "/images/projects/ai/customer-rep-ai-assistant.mp4",
     see_also: ["howard-miller", "product-configurator", "automated-marketing"],
   },
   {
