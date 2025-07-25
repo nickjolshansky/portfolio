@@ -346,6 +346,10 @@ nav {
   .see-also-list {
     gap: 1rem;
   }
+
+  .project-gallery .gallery-item:nth-last-child(2):nth-child(even) {
+    max-width: 77%;
+  }
 }
 
 @media (max-width: 600px) {
