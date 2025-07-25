@@ -1,4 +1,3 @@
-// projectData.js
 const projectData = [
   {
     id: "howard-miller",
@@ -8,7 +7,6 @@ const projectData = [
     overview:
       "A complete overhaul of the Howard Miller website, focused on delivering a seamless, modern shopping experience. Built on Shopify, the new site features enhanced e-commerce capabilities including responsive product catalogs, real-time inventory integration, and a simplified checkout process. Custom product configuration tools and AI-driven marketing enhancements were added to support personalization and improve conversion rates.",
     features: ["Responsive product catalogs", "Integrated inventory management", "Streamlined checkout process"],
-    video: "https://www.youtube.com/embed/wbJcJCkBcMg",
     screenshots: [
       {
         src: "/images/projects/hm-website/redesign/hm-homepage.webm",
@@ -18,7 +16,7 @@ const projectData = [
       {
         src: "/images/projects/hm-website/redesign/hm-collection-page.webm",
         alt: "Product Collection Page",
-        caption: "Product Collection Page",
+        caption: "Product Collection Page and Navigation",
       },
       {
         src: "/images/projects/hm-website/redesign/hm-product-page.webm",
@@ -44,7 +42,7 @@ const projectData = [
     features: ["Live 3D product preview", "Real-time dimension calculations", "User-friendly interface", "PDF generation for quoting"],
     screenshots: [
       {
-        src: "/images/projects/hm-website/configurator/console.mp4",
+        src: "/images/projects/hm-website/configurator/console-configurator.webm",
         alt: "Configurator tool UI",
         caption: "Interactive console configurator",
       },
@@ -83,8 +81,12 @@ const projectData = [
         alt: "Configurator tool UI",
         caption: "Interactive console configurator",
       },
+      {
+        src: "/images/projects/hm-website/configurator/modular-configurator.webm",
+        alt: "Configurator tool UI",
+        caption: "Interactive console configurator",
+      },
     ],
-    video: "/images/projects/hm-website/configurator/modular.mp4",
     see_also: ["howard-miller", "automated-marketing", "ai-sales-tools"],
   },
   {
@@ -137,8 +139,12 @@ const projectData = [
         alt: "Shopify integrated quoting tool",
         caption: "PHP backend to handle quote saving and PDF generation for elegant information display",
       },
+      {
+        src: "/images/projects/hm-website/automation/quote-tool.webm",
+        alt: "Shopify integrated quoting tool",
+        caption: "PHP backend to handle quote saving and PDF generation for elegant information display",
+      },
     ],
-    video: "/images/projects/hm-website/automation/quote-tool.mp4",
     see_also: ["howard-miller", "product-configurator", "ai-sales-tools"],
   },
   {
@@ -171,8 +177,12 @@ const projectData = [
         alt: "AI customer rep assistant",
         caption: "AI assistant for referencing legacy product documentation",
       },
+      {
+        src: "/images/projects/ai/customer-rep-ai-assistant.webm",
+        alt: "AI customer rep assistant",
+        caption: "AI assistant for referencing legacy product documentation",
+      },
     ],
-    video: "/images/projects/ai/customer-rep-ai-assistant.mp4",
     see_also: ["howard-miller", "product-configurator", "automated-marketing"],
   },
   {
@@ -224,17 +234,18 @@ const projectData = [
   {
     id: "subtitles-pokemon-player",
     title: "Automated Pokemon Played by Movie Subtitles",
-    desc: "A Python program that uses movie subtitles to generate input commands for a Pokemon game.",
-    tags: ["HTML/CSS/JS", "Python", "Flask", "ffmpeg"],
+    desc: "A Python program that uses movie subtitles to generate input commands for a Pokémon game.",
+    tags: ["HTML/CSS/JS", "Python", "Flask", "Automation", "Parsing"],
     github: null,
     overview:
-      "Built a Python program that parses SRT movie subtitles and turns them into input commands for a Pokémon game. Powered by Flask and ffmpeg, it’s an experiment in automation and absurdist entertainment.",
-    features: ["Subtitle parsing", "Input command generation", "Game automation", "pointless fun"],
+      "Developed a Python/Flask program that takes SRT movie subtitles and transforms them into live input commands for a Pokémon game. This project explores the intersection of automation, text parsing, and playful absurdity. The system synchronizes subtitle timing with game inputs, turning passive movie watching into unpredictable, automated gameplay.",
+    features: ["Subtitle parsing", "Input command generation", "Game automation", "Pointless fun"],
     screenshots: [
       {
-        src: "/smart-dashboard.jpg",
-        alt: "Home dashboard UI",
-        caption: "Smart home display powered by Raspberry Pi",
+        src: "/images/projects/pokemon-player/subs-play-pokemon.webm",
+        alt: "Demo Video",
+        caption:
+          "The python script parses the timecodes for each sentence in the subtitle file and tries to highlight each word at the best approximate time. This ensures that the subtitles never get too out of sync with the audio. The length of each word determines what input command will be sent to the game.",
       },
     ],
     see_also: ["geneva-archives", "game-showcase", "media-showcase"],
@@ -261,16 +272,61 @@ const projectData = [
     id: "media-showcase",
     title: "Media Showcase",
     desc: "Take a deeper look into some of the media work I've done professionally and personally.",
-    tags: ["Video Editing", "3D Animation", "Blender", "Adobe Suite", "Camera Work", ""],
+    tags: [
+      "3D Animation",
+      "Video Production",
+      "Broadcast Directing",
+      "Blender",
+      "Adobe Creative Suite",
+      "Live Event Production",
+      "Camera Operation",
+      "Technical Directing",
+      "Collaborative Projects",
+      "Motion Graphics",
+    ],
     github: null,
     overview:
-      "Animated a fully custom 3D segment in Blender as part of the viral ‘Shrek 2 Retold’ project. Included character rigging, lip-syncing, and stylized lighting.",
-    features: ["Full 3D animation pipeline", "Custom rigging & lip-sync", "Stylized render aesthetic"],
+      "A multi-disciplinary showcase of my professional and personal media projects, spanning broadcast television, animated promos, live event production, and collaborative viral art. Highlights include directing live newscasts, orchestrating sports broadcasts, delivering dynamic product promos, and contributing a fully custom 3D animated sequence to the global collaborative film ‘Shrek 2 Retold’. My roles have encompassed everything from technical directing and camera operation to 3D modeling, rigging, and animation, demonstrating both creative vision and technical mastery across the entire media production pipeline.",
+    features: [
+      "End-to-end 3D animation workflow (modeling, rigging, animating, lighting, rendering)",
+      "Broadcast experience: technical directing, live graphics, audio, and camera work",
+      "Collaborative work with large teams of artists and media professionals",
+      "Proficiency in Blender, Adobe Premiere, After Effects, and broadcast automation (Ross Overdrive)",
+      "Creation of stylized, narrative-driven promos and branded content",
+      "Hands-on experience in both studio and field production settings",
+      "Versatility across roles: director, animator, camera operator, graphics, replay, and audio",
+      "Experience mentoring, volunteering, and producing community media",
+    ],
     screenshots: [
       {
-        src: "/shrek-scene.jpg",
-        alt: "Shrek animation still",
-        caption: "Custom Blender-rendered frame",
+        src: "/images/projects/media-showcase/cabinet-promo.webm",
+        alt: "Modular Cabinet Promo",
+        caption:
+          "By leveraging Blender for animation, staging, lighting, and refining model geometry, I created a promotional video that showcases how our modular cabinets can be customized in both appearance and shape to suit each customer’s needs.",
+      },
+      {
+        src: "/images/projects/media-showcase/news.webm",
+        alt: "WLUC TV6",
+        caption:
+          "In the heart of the UP I had the priviledge of directing newscasts for WLUC TV6. My work included techincal directing, programming the flow of production using Ross Overdrive, staging and queueing graphics, cameras, microphones, pre-recorded materials, and live on-location segments.",
+      },
+      {
+        src: "/images/projects/media-showcase/hockey.webm",
+        alt: "Sports Broadcasting",
+        caption:
+          "I have sports broadcasting experience that spans every role in the control room including directing, camera operating, replay, audio, and graphics.",
+      },
+      {
+        src: "/images/projects/media-showcase/shrek-2-retold.webm",
+        alt: "Artist Collaboration",
+        caption:
+          "I got the opportunity to contribute to a project featuring over 800 artists! I collaborated with other artists with 3D modeling, texturing, and lighting to a short scene in the upcoming film Shrek 2 Retold!",
+      },
+      {
+        src: "/images/projects/media-showcase/volunteer-editing.webm",
+        alt: "Volunteer Work and Editing",
+        caption:
+          "During my education I volunteered for Traverse Area Community Media to get hands on experience developing media content for live local events and community projects. This is also where I honed my skill for video editing.",
       },
     ],
     see_also: ["geneva-archives", "game-showcase", "smart-dashboard"],

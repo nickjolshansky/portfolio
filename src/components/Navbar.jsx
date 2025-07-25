@@ -21,7 +21,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("#home");
   const navLinksRef = useRef(null);
 
-  // Update active nav on scroll
   useEffect(() => {
     const handleScroll = () => {
       const scroll = window.scrollY + 70;
@@ -61,7 +60,6 @@ const Navbar = () => {
     }
   };
 
-  // Accessibility: allow Enter/Space to open menu
   const navToggleHandler = e => {
     if (e.type === "click" || e.key === "Enter" || e.key === " ") {
       setMenuOpen(open => !open);
