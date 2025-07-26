@@ -6,7 +6,11 @@ const projectData = [
     tags: ["E-commerce", "Web Design", "Shopify"],
     overview:
       "A complete overhaul of the Howard Miller website, focused on delivering a seamless, modern shopping experience. Built on Shopify, the new site features enhanced e-commerce capabilities including responsive product catalogs, real-time inventory integration, and a simplified checkout process. Custom product configuration tools and AI-driven marketing enhancements were added to support personalization and improve conversion rates.",
-    features: ["Responsive product catalogs", "Integrated inventory management", "Streamlined checkout process"],
+    features: [
+      "Responsive product catalogs",
+      "Integrated inventory management",
+      "Streamlined checkout process",
+    ],
     screenshots: [
       {
         src: "/images/projects/hm-website/redesign/hm-homepage.webm",
@@ -39,7 +43,12 @@ const projectData = [
     github: null,
     overview:
       "Developed a custom UI that connects to Intiaro’s 3D engine via API, enabling real-time furniture customization and quoting within Shopify. The interface handles dimension & sku logic, option visualization, and PDF generation. Built for a seamless user experience using Node.js, Express, and jQuery.",
-    features: ["Live 3D product preview", "Real-time dimension calculations", "User-friendly interface", "PDF generation for quoting"],
+    features: [
+      "Live 3D product preview",
+      "Real-time dimension calculations",
+      "User-friendly interface",
+      "PDF generation for quoting",
+    ],
     screenshots: [
       {
         src: "/images/projects/hm-website/configurator/console-configurator.webm",
@@ -49,42 +58,49 @@ const projectData = [
       {
         src: "/images/projects/hm-website/configurator/console0.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "Users can select from different base models that are linked to different product SKUs.",
       },
       {
         src: "/images/projects/hm-website/configurator/console1.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "Users can customize different hardware, finishes, and styles.",
       },
       {
         src: "/images/projects/hm-website/configurator/console2.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "Using generative AI, users can see the final product in a room that they create through a form.",
       },
       {
         src: "/images/projects/hm-website/configurator/modular0.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "Users can combine different modular pieces to create a unique configuration.",
       },
       {
         src: "/images/projects/hm-website/configurator/modular1.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "Users can customize each individual unit and navigate accross all options with ease.",
       },
       {
         src: "/images/projects/hm-website/configurator/modular2.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "A list of all SKUs is generated as the user makes their selections.",
       },
       {
         src: "/images/projects/hm-website/configurator/modular3.jpg",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption:
+          "The user can generate a PDF quote with all the selected options and SKUs.",
       },
       {
         src: "/images/projects/hm-website/configurator/modular-configurator.webm",
         alt: "Configurator tool UI",
-        caption: "Interactive console configurator",
+        caption: "Here is the modular configurator in action.",
       },
     ],
     see_also: ["howard-miller", "automated-marketing", "ai-sales-tools"],
@@ -97,52 +113,65 @@ const projectData = [
     github: null,
     overview:
       "Built a suite of tools to automate the generation of product spec sheets and marketing assets from CSV or MySQL sources. Integrated OpenAI for dynamic content creation and templating, with one-click exports and Shopify quoting support. Backend developed in Node.js or PHP depending on client needs, designed for speed, scalability, and ease of use.",
-    features: ["One-click spec sheet export", "Metadata-driven templating", "OpenAI integration for content generation"],
+    features: [
+      "One-click spec sheet export",
+      "Metadata-driven templating",
+      "OpenAI integration for content generation",
+    ],
     screenshots: [
       {
         src: "/images/projects/hm-website/automation/automated-marketing.jpg",
         alt: "Automated marketing tools",
-        caption: "Automated marketing tools for generating spec sheets and product data",
+        caption:
+          "Automated marketing tools for generating spec sheets and product data",
       },
       {
         src: "/images/projects/hm-website/automation/product-spec-sheet.jpg",
         alt: "Automated marketing tools",
-        caption: "Product spec sheets generated on demand from data stored in Shopify and other product inventory managers",
+        caption:
+          "Product spec sheets generated on demand from data stored in Shopify and other product inventory managers",
       },
       {
         src: "/images/projects/hm-website/automation/sheet.jpg",
         alt: "Automated marketing tools",
-        caption: "Marketing sheets for sales reps built directly from excel data using node.js and html templating",
+        caption:
+          "Marketing sheets for sales reps built directly from excel data using node.js and html templating",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool0.jpg",
         alt: "Shopify integrated quoting tool",
-        caption: "Shopify integrated dashboard for sales raps and admins to view past quotes",
+        caption:
+          "Shopify integrated dashboard for sales raps and admins to view past quotes",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool1.jpg",
         alt: "Shopify integrated quoting tool",
-        caption: "Integrated Shopify's storefront API to parse order data and display details to users with authorization",
+        caption:
+          "Integrated Shopify's storefront API to parse order data and display details to users with authorization",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool2.jpg",
         alt: "Shopify integrated quoting tool",
-        caption: "Automatically populate checkout cart with selected items using Shopify's cart API ",
+        caption:
+          "Automatically populate checkout cart with selected items using Shopify's cart API ",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool3.jpg",
         alt: "Shopify integrated quoting tool",
-        caption: "Form with validation to allow sales reps to generate and save new quotes with custom data",
+        caption:
+          "Form with validation to allow sales reps to generate and save new quotes with custom data",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool4.jpg",
         alt: "Shopify integrated quoting tool",
-        caption: "PHP backend to handle quote saving and PDF generation for elegant information display",
+        caption:
+          "PHP backend to handle quote saving and PDF generation for elegant information display",
       },
       {
         src: "/images/projects/hm-website/automation/quote-tool.webm",
         alt: "Shopify integrated quoting tool",
-        caption: "PHP backend to handle quote saving and PDF generation for elegant information display",
+        caption:
+          "PHP backend to handle quote saving and PDF generation for elegant information display",
       },
     ],
     see_also: ["howard-miller", "product-configurator", "ai-sales-tools"],
@@ -150,12 +179,26 @@ const projectData = [
   {
     id: "ai-sales-tools",
     title: "AI-Powered Sales Solutions",
-    desc: "Developed AI-powered tools to support online furniture sales, including a room scene generator powered by diffusion models and a chatbot trained on product data. The chatbot handles customer inquiries and recommends products based on real-time inputs. All tools are integrated with existing sales platforms via REST APIs and supported by a Node.js/PHP backend.",
-    tags: ["AI", "Sales Tools", "Chatbot", "OpenAI", "Node.js", "MySQL", "REST API", "PHP"],
+    desc: "Built a suite of AI tools to enhance online furniture sales. Included a room scene generator using diffusion models and a conversational chatbot trained on product data.",
+    tags: [
+      "AI",
+      "Sales Tools",
+      "Chatbot",
+      "OpenAI",
+      "Node.js",
+      "MySQL",
+      "REST API",
+      "PHP",
+    ],
     github: null,
     overview:
-      "Built a suite of AI tools to enhance online furniture sales. Included a room scene generator using diffusion models and a conversational chatbot trained on product data.",
-    features: ["AI-generated room scenes", "Smart product recommendation bot", "Chatbot for customer inquiries", "Integration with existing sales platforms"],
+      "Developed AI-powered tools to support online furniture sales, including a room scene generator powered by diffusion models and a chatbot trained on product data. The chatbot handles customer inquiries and recommends products based on real-time inputs. All tools are integrated with existing sales platforms via REST APIs and supported by a Node.js/PHP backend.",
+    features: [
+      "AI-generated room scenes",
+      "Smart product recommendation bot",
+      "Chatbot for customer inquiries",
+      "Integration with existing sales platforms",
+    ],
     screenshots: [
       {
         src: "/images/projects/ai/presti.webm",
@@ -186,37 +229,55 @@ const projectData = [
     see_also: ["howard-miller", "product-configurator", "automated-marketing"],
   },
   {
-    id: "geneva-archives",
-    title: "Geneva Street Archives",
-    desc: "Created a digital archive for family history, including video and image digitization, interactive family tree, games and voting systems, and login authentication.",
-    tags: ["Archives", "Family History", "Multimedia", "React", "Vite", "MUI", "ASP.NET Core", "Entity Framework", "MySQL Server", "IIS Hosting"],
+    id: "subtitles-pokemon-player",
+    title: "Automated Pokemon Played by Movie Subtitles",
+    desc: "A Python program that uses movie subtitles to generate input commands for a Pokémon game.",
+    tags: ["HTML/CSS/JS", "Python", "Flask", "Automation", "Parsing"],
     github: null,
     overview:
-      "A personal archival platform combining digitized videos, photos, and an interactive family tree interface. Focused on longevity, privacy, and accessibility. Family members are provided a user-friendly interface to explore, upload, and update information that is stored on a database.",
-    features: ["Family tree visualization", "Video/audio playback from archive", "Private access controls"],
+      "Developed a Python/Flask program that takes SRT movie subtitles and transforms them into live input commands for a Pokémon game. This project explores the intersection of automation, text parsing, and playful absurdity. The system synchronizes subtitle timing with game inputs, turning passive movie watching into unpredictable, automated gameplay.",
+    features: [
+      "Subtitle parsing",
+      "Input command generation",
+      "Game automation",
+      "Pointless fun",
+    ],
     screenshots: [
       {
-        src: "/geneva-tree.jpg",
-        alt: "Family tree viewer",
-        caption: "Interactive family tree interface",
+        src: "/images/projects/pokemon-player/subs-play-pokemon.webm",
+        alt: "Demo Video",
+        caption:
+          "The python script parses the timecodes for each sentence in the subtitle file and tries to highlight each word at the best approximate time. This ensures that the subtitles never get too out of sync with the audio. The length of each word determines what input command will be sent to the game.",
       },
     ],
-    see_also: ["smart-dashboard", "game-showcase", "media-showcase"],
+    see_also: ["howard-miller", "product-configurator", "media-showcase"],
   },
   {
     id: "smart-dashboard",
     title: "Smart Home Dashboard",
     desc: "Touchscreen Raspberry Pi dashboard for weather, news, and home surveillance system.",
-    tags: ["IoT", "Raspberry Pi", "Home Automation", "HTML/CSS/JS/jQuery", "REST API"],
+    tags: [
+      "IoT",
+      "Raspberry Pi",
+      "Home Automation",
+      "HTML/CSS/JS/jQuery",
+      "REST API",
+    ],
     github: null,
     overview:
       "Created a touchscreen dashboard on a Raspberry Pi to display weather, news, and live surveillance feeds. Built with HTML/CSS/JS and REST APIs, it serves as a central hub for information to start my day.",
-    features: ["Live weather and news feeds", "Connection to home surveillance system", "Touchscreen interface", "Hosted on Raspberry Pi / Linux"],
+    features: [
+      "Live weather and news feeds",
+      "Connection to home surveillance system",
+      "Touchscreen interface",
+      "Hosted on Raspberry Pi / Linux",
+    ],
     screenshots: [
       {
         src: "/images/projects/smart-dashboard/news.jpg",
         alt: "Home dashboard UI",
-        caption: "Smart home display powered by Raspberry Pi and HTML/CSS/JS/jQuery",
+        caption:
+          "Smart home display powered by Raspberry Pi and HTML/CSS/JS/jQuery",
       },
       {
         src: "/images/projects/smart-dashboard/weather.jpg",
@@ -229,44 +290,11 @@ const projectData = [
         caption: "All controlled by a Raspberry Pi",
       },
     ],
-    see_also: ["subtitles-pokemon-player", "game-showcase", "media-showcase"],
-  },
-  {
-    id: "subtitles-pokemon-player",
-    title: "Automated Pokemon Played by Movie Subtitles",
-    desc: "A Python program that uses movie subtitles to generate input commands for a Pokémon game.",
-    tags: ["HTML/CSS/JS", "Python", "Flask", "Automation", "Parsing"],
-    github: null,
-    overview:
-      "Developed a Python/Flask program that takes SRT movie subtitles and transforms them into live input commands for a Pokémon game. This project explores the intersection of automation, text parsing, and playful absurdity. The system synchronizes subtitle timing with game inputs, turning passive movie watching into unpredictable, automated gameplay.",
-    features: ["Subtitle parsing", "Input command generation", "Game automation", "Pointless fun"],
-    screenshots: [
-      {
-        src: "/images/projects/pokemon-player/subs-play-pokemon.webm",
-        alt: "Demo Video",
-        caption:
-          "The python script parses the timecodes for each sentence in the subtitle file and tries to highlight each word at the best approximate time. This ensures that the subtitles never get too out of sync with the audio. The length of each word determines what input command will be sent to the game.",
-      },
+    see_also: [
+      "subtitles-pokemon-player",
+      "product-configurator",
+      "media-showcase",
     ],
-    see_also: ["geneva-archives", "game-showcase", "media-showcase"],
-  },
-  {
-    id: "game-showcase",
-    title: "Game Development Showcase",
-    desc: "Developed a Unity puzzle game and a Discord bot for gaming community integration.",
-    tags: ["Unity", "Game Dev", "Discord Bot"],
-    github: null,
-    overview:
-      "Created a 2.5D puzzle game focused on mechanics and narrative pacing. Also built a custom Discord bot that synced with game data and provided real-time stats.",
-    features: ["Physics-based puzzles", "Dialog-driven narrative", "Discord bot integration"],
-    screenshots: [
-      {
-        src: "/puzzle-game.jpg",
-        alt: "Puzzle game level",
-        caption: "Sample gameplay from Unity project",
-      },
-    ],
-    see_also: ["geneva-archives", "smart-dashboard", "media-showcase"],
   },
   {
     id: "media-showcase",
@@ -302,7 +330,7 @@ const projectData = [
         src: "/images/projects/media-showcase/cabinet-promo.webm",
         alt: "Modular Cabinet Promo",
         caption:
-          "By leveraging Blender for animation, staging, lighting, and refining model geometry, I created a promotional video that showcases how our modular cabinets can be customized in both appearance and shape to suit each customer’s needs.",
+          "Using Blender for animation, staging, lighting, and refining model geometry, I created a promotional video that showcases how our modular cabinets can be customized in both appearance and shape to suit each customer’s needs.",
       },
       {
         src: "/images/projects/media-showcase/news.webm",
@@ -329,8 +357,63 @@ const projectData = [
           "During my education I volunteered for Traverse Area Community Media to get hands on experience developing media content for live local events and community projects. This is also where I honed my skill for video editing.",
       },
     ],
-    see_also: ["geneva-archives", "game-showcase", "smart-dashboard"],
+    see_also: ["howard-miller", "product-configurator", "smart-dashboard"],
   },
 ];
 
 export default projectData;
+
+/*
+  
+  {
+    id: "geneva-archives",
+    title: "Geneva Street Archives",
+    desc: "Created a digital archive for family history, including video and image digitization, interactive family tree, games and voting systems, and login authentication.",
+    tags: [
+      "Archives",
+      "Family History",
+      "Multimedia",
+      "React",
+      "Vite",
+      "MUI",
+      "ASP.NET Core",
+      "Entity Framework",
+      "MySQL Server",
+      "IIS Hosting",
+    ],
+    github: null,
+    overview:
+      "A personal archival platform combining digitized videos, photos, and an interactive family tree interface. Focused on longevity, privacy, and accessibility. Family members are provided a user-friendly interface to explore, upload, and update information that is stored on a database.",
+    features: [
+      "Family tree visualization",
+      "Video/audio playback from archive",
+      "Private access controls",
+    ],
+    screenshots: [
+      {
+        src: "/geneva-tree.jpg",
+        alt: "Family tree viewer",
+        caption: "Interactive family tree interface",
+      },
+    ],
+    see_also: ["smart-dashboard", "game-showcase", "media-showcase"],
+  },
+  {
+    id: "game-showcase",
+    title: "Game Development Showcase",
+    desc: "Developed a Unity puzzle game and a Discord bot for gaming community integration.",
+    tags: ["Unity", "Game Dev", "Discord Bot"],
+    github: null,
+    overview:
+      "Created a 2.5D puzzle game focused on mechanics and narrative pacing. Also built a custom Discord bot that synced with game data and provided real-time stats.",
+    features: ["Physics-based puzzles", "Dialog-driven narrative", "Discord bot integration"],
+    screenshots: [
+      {
+        src: "/puzzle-game.jpg",
+        alt: "Puzzle game level",
+        caption: "Sample gameplay from Unity project",
+      },
+    ],
+    see_also: ["geneva-archives", "smart-dashboard", "media-showcase"],
+  }
+    */
